@@ -2,7 +2,7 @@
 //sbPipeline()
 
 withCredentials([
-usernamePassword(credentialsId: 'TEST_USER_CRE', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')
+usernamePassword(credentialsId: 'TEST_USER_CRE', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD'),
 usernamePassword(credentialsId: 'DB_TEST', usernameVariable: 'DB_USERNAME', passwordVariable: 'DB_PASSWORD')
 ])
 
