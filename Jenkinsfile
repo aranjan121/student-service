@@ -7,10 +7,10 @@ usernamePassword(credentialsId: 'DB_TEST', usernameVariable: 'DB_USERNAME', pass
 ])
 
 {
-	sbPipeline,
+	sbPipeline(
 	testUser:["TEST_USER" : "${env.USERNAME}","TEST_PASS" : "${env.PASSWORD}"],
 	dbUser:["TEST_USER_DB" : "${env.DB_USERNAME}","TEST_PASS" : "${env.DB_PASSWORD}"]
-	
+	)
 
 }
 
